@@ -26,7 +26,7 @@ public abstract class Product {
         return discountStrategy;
     }
 
-    public void setDiscount(DiscountStrategy discountStrategy) {
+    public void setDiscountStrategy (DiscountStrategy discountStrategy) {
      
     }
 

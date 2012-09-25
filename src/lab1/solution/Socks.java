@@ -13,12 +13,12 @@ public class Socks extends Product {
      
     }
 
-    public Socks(String partName, String partNumber, double price, DiscountStrategy
-            discountStrategy) {
+    public Socks(String partName, String partNumber, double price, NoDiscountStrategy
+            discount) {
         this.setPartName(partName);
         this.setPartNumber(partNumber);
         this.setPrice(price);
-        this.setDiscount(discountStrategy);
+        this.setDiscountStrategy(discount);
     }
     
 }
