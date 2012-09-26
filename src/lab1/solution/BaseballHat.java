@@ -13,7 +13,7 @@ public class BaseballHat extends Product {
     }
 
     public BaseballHat(String partName, String partNumber, double price, 
-            DiscountTenStrategy discount) {
+            DiscountStrategy discount) {
         this.setPartName(partName);
         this.setPartNumber(partNumber);
         this.setPrice(price);

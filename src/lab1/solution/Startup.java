@@ -8,14 +8,16 @@ import java.text.NumberFormat;
  * @author jlombardo
  */
 public class Startup {
-    public static void main(String[] args) {
-          
+    public static void main(String[] args) { 
+        
+        
         Product[] products = {
             new BaseballHat("Brewers Baseball Hat", "BH100", 19.95,
-               ),
+              new DiscountTenStrategy()),
             new LeatherBelt("Men's Leather Dress Belt", "LB201", 39.50, 
-                    ),
-            new Socks("Women's Cotton Socks (Large)", "WS45", 25.88)
+                   new DiscountFifteenStrategy() ),
+            new Socks("Women's Cotton Socks (Large)", "WS45", 25.88, new
+                NoDiscountStrategy())
         };
         
         NumberFormat nf = NumberFormat.getCurrencyInstance();

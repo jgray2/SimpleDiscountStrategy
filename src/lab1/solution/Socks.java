@@ -13,7 +13,7 @@ public class Socks extends Product {
      
     }
 
-    public Socks(String partName, String partNumber, double price, NoDiscountStrategy
+    public Socks(String partName, String partNumber, double price, DiscountStrategy
             discount) {
         this.setPartName(partName);
         this.setPartNumber(partNumber);
